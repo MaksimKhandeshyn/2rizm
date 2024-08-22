@@ -1,5 +1,11 @@
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo__icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 46px;
 }

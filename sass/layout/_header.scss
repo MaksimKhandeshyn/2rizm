@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  padding: 38px 57px;
+  align-items: center;
+  .header-icon {
+    margin-right: 12px;
+  }
+  .header__icon-call {
+    margin-right: 12px;
+  }
+  .header__logo-link {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.25;
+    color: #141414;
+    height: 100%;
+  }
+  .header-call {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    height: 100%;
+    color: #141414;
+    display: flex;
+    align-items: center;
+    margin-right: 485px;
+  }
+}
