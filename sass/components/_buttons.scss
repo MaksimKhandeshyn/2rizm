@@ -20,3 +20,47 @@
     box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
   }
 }
+.hero__btn {
+  font-family: $font-family;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: $subtitle-color;
+  border: none;
+  width: 250px;
+  height: 65px;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  &:hover {
+    cursor: pointer;
+    background-color: $comment-bg;
+    box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+  }
+}
+.services__item-btn {
+  font-family: $font-family;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $text-color;
+  background-color: transparent;
+  border: 2px solid $button-color;
+  width: 180px;
+  height: 55px;
+  margin-top: 30px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 300ms;
+  &:hover {
+    cursor: pointer;
+    background-color: $button-color;
+    color: $theme-white;
+    box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+  }
+}

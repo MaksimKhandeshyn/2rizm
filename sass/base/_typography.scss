@@ -1,3 +1,12 @@
 body {
-    font-family: $second-family;
+  font-family: $second-family;
+}
+.subtitle {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.545;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5c8692;
 }

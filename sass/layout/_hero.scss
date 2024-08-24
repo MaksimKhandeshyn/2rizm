@@ -1,0 +1,32 @@
+.hero {
+  padding-top: 131px;
+  padding-bottom: 136px;
+  background: url("../../images/border-hero.png") no-repeat  77%,
+    url("../../images/hero-bg_2.jpg") no-repeat right;
+  .hero__subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    .hero__icon {
+      margin-right: 9px;
+    }
+  }
+  .hero__title {
+    font-size: 70px;
+    letter-spacing: -0.01em;
+    color: $text-color;
+    width: 510px;
+    margin-bottom: 24px;
+  }
+  .hero__info {
+    font-family: $font-family;
+    font-size: 19px;
+    line-height: 1.7;
+    color: $color-info;
+    width: 508px;
+    margin-bottom: 34px;
+  }
+  .hero__img {
+    box-shadow: 0 20px 60px 0 rgba(47, 68, 73, 0.46);
+  }
+}

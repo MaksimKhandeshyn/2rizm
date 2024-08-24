@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -8,4 +8,11 @@
   display: flex;
   align-items: center;
   margin-right: 46px;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+}
+.content-wrapper {
+  margin-right: 72px;
 }
