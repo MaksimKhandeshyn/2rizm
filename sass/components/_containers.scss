@@ -9,10 +9,18 @@
   align-items: center;
   margin-right: 46px;
 }
-.hero__container {
+.section__container {
   display: flex;
   align-items: center;
 }
 .content-wrapper {
   margin-right: 72px;
+}
+.price__container {
+  display: flex;
+  align-items: center;
+  height: 640px;
+  .content-wrapper {
+    margin-right: 0;
+  }
 }

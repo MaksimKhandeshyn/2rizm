@@ -89,7 +89,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero__container">
+        <div class="container section__container">
           <div class="content-wrapper">
             <p class="subtitle hero__subtitle">
               <svg class="hero__icon" width="22" height="21">
@@ -104,7 +104,7 @@
             </p>
             <button type="button" class="hero__btn">Make a reservation</button>
           </div>
-          <img src="./images/hero-img.png" alt="woman" class="hero__img"/>
+          <img src="./images/hero-img.png" alt="woman" class="hero__img" />
         </div>
       </section>
 
@@ -149,7 +149,7 @@
       </section>
 
       <section class="about">
-        <div class="container">
+        <div class="container section__container">
           <div class="content__wrapper">
             <p class="subtitle">About Us</p>
             <h2 class="about__title">
@@ -163,25 +163,30 @@
             </p>
             <ul class="about__list">
               <li class="about__list-item">
-                <svg class="about__list-icon" width="48" height="72">
+                <svg class="about__item-icon" width="48" height="72">
                   <use href="./icons/symbol-defs.svg#icon-great-service"></use>
                 </svg>
-                <h3 class="about__list-title">Beauty Experts</h3>
+                <h3 class="about__item-title">Beauty Experts</h3>
               </li>
               <li class="about__list-item">
-                <svg class="about__list-icon" width="73" height="74">
+                <svg class="about__item-icon" width="73" height="74">
                   <use href="./icons/symbol-defs.svg#icon-beauty"></use>
                 </svg>
-                <h3 class="about__list-title">Great Services</h3>
+                <h3 class="about__item-title">Great Services</h3>
               </li>
               <li class="about__list-item">
-                <svg class="about__list-icon" width="65" height="72">
+                <svg class="about__item-icon" width="65" height="72">
                   <use href="./icons/symbol-defs.svg#icon-Genuine"></use>
                 </svg>
-                <h3 class="about__list-title">100% Genuine</h3>
+                <h3 class="about__item-title">100% Genuine</h3>
               </li>
             </ul>
           </div>
+          <img
+            src="./images/about-us.png"
+            alt="woman with mask"
+            class="about__img"
+          />
         </div>
       </section>
 
@@ -192,93 +197,91 @@
             We are Experienced in making you very Beautiful
           </h2>
           <div class="price__container">
-            <img src="./images/service-1.png" alt="mask" />
+            <img src="./images/service-1.png" alt="mask" class="price__img"/>
             <div class="content-wrapper">
-              <ul class="price__list">
+              <ul class="price__first-list">
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
+                  <h3 class="price__item-title">
                     Face masks .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$48.00</span>
+                    <span class="from">from</span>$48.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
                   </p>
                 </li>
+
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
-                    Full body massage .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$54.00</span>
+                  <h3 class="price__item-title">
+                    Full body massage ..............................
+                    <span class="from">from</span>$54.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
                   </p>
                 </li>
+
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
-                    Geothetmal spa .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$54.00</span>
+                  <h3 class="price__item-title">
+                    Geothetmal spa ..................................
+                    <span class="from">from</span>$54.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
                   </p>
                 </li>
+
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
+                  <h3 class="price__item-title">
                     Sauna relax .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$73.00</span>
+                    <span class="from">from</span>$73.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
                   </p>
                 </li>
               </ul>
-              <button type="button" class="price__btn">
+              <button type="button" class="price__btn price__first-btn">
                 Get an appointment
               </button>
             </div>
           </div>
           <div class="price__container">
             <div class="content-wrapper">
-              <ul class="price__list">
+              <ul class="price__seond-list">
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
+                  <h3 class="price__item-title">
                     Face masks .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$48.00</span>
+                    <span class="from">from</span>$48.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
                   </p>
                 </li>
+
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
-                    Full body massage .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$54.00</span>
+                  <h3 class="price__item-title">
+                    Full body massage ..............................
+                    <span class="from">from</span>$54.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
                   </p>
                 </li>
+
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
-                    Geothetmal spa .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$54.00</span>
+                  <h3 class="price__item-title">
+                    Geothetmal spa ..................................
+                    <span class="from">from</span>$54.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
                   </p>
                 </li>
+
                 <li class="price__list-item">
-                  <h3 class="price_item-title">
+                  <h3 class="price__item-title">
                     Sauna relax .......................................
-                    <span class="from">from</span
-                    ><span class="cost">$73.00</span>
+                    <span class="from">from</span>$73.00
                   </h3>
                   <p class="price__item-info">
                     The versions have evolved over the sometimes by accident.
@@ -289,7 +292,7 @@
                 Get an appointment
               </button>
             </div>
-            <img src="./images/service-2.png" alt="mask" />
+            <img src="./images/service-2.png" alt="mask" class="price__img"/>
           </div>
         </div>
       </section>
