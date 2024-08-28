@@ -24,3 +24,22 @@
     margin-right: 0;
   }
 }
+
+.comment__item-container {
+  background: $comment-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+}
+
+.discount__container {
+  display: flex;
+  border: 1px solid #95bfcb;
+  width: 455px;
+  height: 145px;
+  background-color: $theme-white;
+  .discount__item-container {
+    margin-left: 19px;
+  }
+}
