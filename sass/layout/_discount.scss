@@ -61,6 +61,46 @@
       text-transform: uppercase;
       text-align: center;
       color: $theme-white;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+    .discount__block-amount {
+      display: block;
+      margin: auto;
+    }
+    .discount__block-text {
+      font-family: $font-family;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $theme-white;
+    }
+  }
+
+  .form {
+    width: 550px;
+    height: 667px;
+    box-shadow: 0 20px 40px 0 rgba(42, 68, 75, 0.13);
+    background: $theme-white;
+    .form__list-item {
+      position: relative;
+
+    }
+    .form__item-input {
+      border: 1px solid $button-color;
+      width: 400px;
+      height: 65px;
+      padding-left: 54px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .form__item-icon {
+      position: absolute;
+      top: 21px;
+      left: 15px;
     }
   }
 }

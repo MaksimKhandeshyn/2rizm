@@ -453,7 +453,11 @@
                 </svg>
                 <div class="discount__item-container">
                   <h3 class="discount__container-title">Mail us:</h3>
-                  <a href="mailto:info@beautyness.com" class="discount__container-link">info@beautyness.com</a>
+                  <a
+                    href="mailto:info@beautyness.com"
+                    class="discount__container-link"
+                    >info@beautyness.com</a
+                  >
                 </div>
               </li>
               <li class="discount__list-item">
@@ -462,18 +466,84 @@
                 </svg>
                 <div class="discount__item-container">
                   <h3 class="discount__container-title">Call us:</h3>
-                  <a href="tel:+2221234568009" class="discount__container-link">(+22) 123 4568 009</a>
+                  <a href="tel:+2221234568009" class="discount__container-link"
+                    >(+22) 123 4568 009</a
+                  >
                 </div>
               </li>
             </ul>
             <div class="discount__container-block">
               <p class="discount__block-title">- Get Flat -</p>
-              <svg class="discount__block-amount" width="97" height="48"> 
+              <svg class="discount__block-amount" width="97" height="48">
                 <use href="./icons/symbol-defs.svg#icon-discount"></use>
               </svg>
               <p class="discount__block-text">Discount</p>
             </div>
           </div>
+
+          <form class="form">
+            <ul class="form__list">
+              <li class="form__list-item">
+                <svg class="form__item-icon" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-user"></use>
+                </svg>
+                <input
+                  type="text"
+                  class="form__item-input"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                />
+              </li>
+              <li class="form__list-item">
+                <svg class="form__item-icon"  width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                <input
+                  type="text"
+                  class="form__item-input"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </li>
+              <li class="form__list-item">
+                <svg class="form__item-icon" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <input
+                  type="text"
+                  class="form__item-input"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                />
+              </li>
+              <li class="form__list-item">
+                <svg class="form__item-icon" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-service"></use>
+                </svg>
+                <input
+                  type="text"
+                  class="form__item-input"
+                  name="service"
+                  id="service"
+                  placeholder="Service you need "
+                />
+              </li>
+              <li class="form__list-item">
+                <svg class="form__item-icon" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-edit"></use>
+                </svg>
+                <textarea
+                  name="notes"
+                  id="notes"
+                  placeholder="Any notes for us"
+                ></textarea>
+              </li>
+            </ul>
+            <button type="button" class="form__btn">Get an appointment</button>
+          </form>
         </div>
       </section>
 

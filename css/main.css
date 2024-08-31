@@ -189,6 +189,7 @@ body {
 
 .discount__container {
   display: flex;
+  justify-content: space-between;
   border: 1px solid #95bfcb;
   width: 455px;
   height: 145px;
@@ -615,4 +616,42 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+.discount .discount__container-block .discount__block-amount {
+  display: block;
+  margin: auto;
+}
+.discount .discount__container-block .discount__block-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+.discount .form {
+  width: 550px;
+  height: 667px;
+  box-shadow: 0 20px 40px 0 rgba(42, 68, 75, 0.13);
+  background: #fff;
+}
+.discount .form .form__list-item {
+  position: relative;
+}
+.discount .form .form__item-input {
+  border: 1px solid #5c8692;
+  width: 400px;
+  height: 65px;
+  padding-left: 54px;
+}
+.discount .form .form__item-input:focus {
+  outline: none;
+}
+.discount .form .form__item-icon {
+  position: absolute;
+  top: 21px;
+  left: 15px;
 }/*# sourceMappingURL=main.css.map */
