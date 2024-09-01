@@ -23,12 +23,11 @@
   }
 
   .discount__list {
-    margin-top: 18px;
     margin-left: 40px;
     .discount__list-item {
       display: flex;
       align-items: baseline;
-
+      margin-top: 18px;
       .discount__container-title,
       .discount__container-link {
         font-family: $font-family;
@@ -76,6 +75,7 @@
       letter-spacing: 0.02em;
       text-align: center;
       color: $theme-white;
+      margin-top: 8px;
     }
   }
 
@@ -84,9 +84,11 @@
     height: 667px;
     box-shadow: 0 20px 40px 0 rgba(42, 68, 75, 0.13);
     background: $theme-white;
+    padding: 66px 75px;
+    margin-left: 115px;
     .form__list-item {
       position: relative;
-
+      margin-bottom: 15px;
     }
     .form__item-input {
       border: 1px solid $button-color;
@@ -96,6 +98,12 @@
       &:focus {
         outline: none;
       }
+    }
+    .form__item-textarea {
+      resize: none;
+      padding-top: 21px;
+      width: 399px;
+      height: 136px;
     }
     .form__item-icon {
       position: absolute;

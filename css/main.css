@@ -149,6 +149,28 @@ body {
   box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
 }
 
+.form__btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  width: 399px;
+  height: 64px;
+  background: #5c8692;
+  border: none;
+  transition-property: background-color, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.form__btn:hover {
+  cursor: pointer;
+  background-color: #1e2c30;
+  box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -185,6 +207,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 135px;
+}
+
+.discount__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .discount__container {
@@ -293,7 +320,7 @@ body {
 .hero {
   padding-top: 131px;
   padding-bottom: 136px;
-  background: url("../../images/border-hero.png") no-repeat 77%, url("../../images/hero-bg_2.jpg") no-repeat right;
+  background: url("../images/border-hero.png") no-repeat 77%, url("../images/hero-bg_2.jpg") no-repeat right;
 }
 .hero .hero__subtitle {
   display: flex;
@@ -580,12 +607,12 @@ body {
   margin-bottom: 37px;
 }
 .discount .discount__list {
-  margin-top: 18px;
   margin-left: 40px;
 }
 .discount .discount__list .discount__list-item {
   display: flex;
   align-items: baseline;
+  margin-top: 18px;
 }
 .discount .discount__list .discount__list-item .discount__container-title,
 .discount .discount__list .discount__list-item .discount__container-link {
@@ -631,15 +658,19 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-top: 8px;
 }
 .discount .form {
   width: 550px;
   height: 667px;
   box-shadow: 0 20px 40px 0 rgba(42, 68, 75, 0.13);
   background: #fff;
+  padding: 66px 75px;
+  margin-left: 115px;
 }
 .discount .form .form__list-item {
   position: relative;
+  margin-bottom: 15px;
 }
 .discount .form .form__item-input {
   border: 1px solid #5c8692;
@@ -649,6 +680,12 @@ body {
 }
 .discount .form .form__item-input:focus {
   outline: none;
+}
+.discount .form .form__item-textarea {
+  resize: none;
+  padding-top: 21px;
+  width: 399px;
+  height: 136px;
 }
 .discount .form .form__item-icon {
   position: absolute;

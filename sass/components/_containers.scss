@@ -32,7 +32,10 @@
   align-items: center;
   height: 135px;
 }
-
+.discount__wrapper {
+  display: flex;
+  align-items: center;
+}
 .discount__container {
   display: flex;
   justify-content: space-between;
