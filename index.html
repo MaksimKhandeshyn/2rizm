@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/logo-icon.png"
+      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
       integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
@@ -84,7 +88,12 @@
           </li>
         </ul>
 
-        <button type="button" class="header-btn">Reservation</button>
+        <button type="button" class="header-btn">
+          <svg class="header__btn-icon" width="13" height="15">
+            <use href="./icons/symbol-defs.svg#icon-reservation"></use>
+          </svg>
+          Reservation
+        </button>
       </nav>
     </header>
     <main>
@@ -713,7 +722,6 @@
             <p class="footer__item-link">Sun: 9am - 6pm</p>
           </li>
         </ul>
-
       </div>
       <div class="copyright__wrapper">
         <a href="#" class="copyright">

@@ -10,6 +10,9 @@
   text-transform: uppercase;
   color: $theme-white;
   margin-left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   transition-property: background-color, box-shadow;
   transition-duration: 300ms;
