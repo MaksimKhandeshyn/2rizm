@@ -31,70 +31,143 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__logo-link logo__icon-wrapper">
-        <svg class="header-icon" width="33" height="33">
-          <use href="./icons/symbol-defs.svg#icon-logo"></use>
-        </svg>
-        Beautyness
-      </a>
-
-      <a href="tel:+221234567890" class="header-call">
-        <svg class="header__icon-call" width="21" height="21">
-          <use href="./icons/symbol-defs.svg#icon-call"></use>
-        </svg>
-        Call Us - (+22) 123 456 7890
-      </a>
-
-      <nav class="nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="#home" class="header__item-link">Home</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__item-link">Pages</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#about" class="header__item-link">About</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#services" class="header__item-link">Services</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#contacts" class="header__item-link">Contact</a>
-          </li>
-        </ul>
-
-        <ul class="nav-media-list">
-          <li class="nav__media-item">
-            <a href="#" class="nav__media-link">
-              <svg class="nav__media-icon" width="10" height="20">
-                <use href="./icons/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav__media-item">
-            <a href="#" class="nav__media-link">
-              <svg class="nav__media-icon" width="16" height="20">
-                <use href="./icons/symbol-defs.svg#icon-x"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav__media-item">
-            <a href="#" class="nav__media-link">
-              <svg class="nav__media-icon" width="14" height="19">
-                <use href="./icons/symbol-defs.svg#icon-linkidin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-        <button type="button" class="header-btn">
-          <svg class="header__btn-icon" width="13" height="15">
-            <use href="./icons/symbol-defs.svg#icon-reservation"></use>
+      <div class="header__container">
+        <a href="#" class="header__logo-link logo__icon-wrapper">
+          <svg class="header-icon" width="33" height="33">
+            <use href="./icons/symbol-defs.svg#icon-logo"></use>
           </svg>
-          Reservation
+          Beautyness
+        </a>
+
+        <a href="tel:+221234567890" class="header-call">
+          <svg class="header__icon-call" width="21" height="21">
+            <use href="./icons/symbol-defs.svg#icon-call"></use>
+          </svg>
+          Call Us - (+22) 123 456 7890
+        </a>
+
+        <nav class="nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#home" class="header__item-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__item-link">Pages</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#about" class="header__item-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#services" class="header__item-link">Services</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="header__item-link">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="nav-media-list">
+            <li class="nav__media-item">
+              <a href="#" class="nav__media-link">
+                <svg class="nav__media-icon" width="10" height="20">
+                  <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__media-item">
+              <a href="#" class="nav__media-link">
+                <svg class="nav__media-icon" width="16" height="20">
+                  <use href="./icons/symbol-defs.svg#icon-x"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__media-item">
+              <a href="#" class="nav__media-link">
+                <svg class="nav__media-icon" width="14" height="19">
+                  <use href="./icons/symbol-defs.svg#icon-linkidin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <button type="button" class="header-btn">
+            <svg class="header__btn-icon" width="13" height="15">
+              <use href="./icons/symbol-defs.svg#icon-reservation"></use>
+            </svg>
+            Reservation
+          </button>
+        </nav>
+      </div>
+
+      <div class="header__menu-container">
+        <button
+          type="button"
+          class="header__menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="button__open-icon" width="20" height="20">
+            <use href="./icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
         </button>
-      </nav>
+
+        <a href="tel:+221234567890" class="header-call">
+          <svg class="header__icon-call" width="21" height="21">
+            <use href="./icons/symbol-defs.svg#icon-call"></use>
+          </svg>
+          Call Us - (+22) 123 456 7890
+        </a>
+
+        <nav class="nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#home" class="header__item-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__item-link">Pages</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#about" class="header__item-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#services" class="header__item-link">Services</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="header__item-link">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="nav-media-list">
+            <li class="nav__media-item">
+              <a href="#" class="nav__media-link">
+                <svg class="nav__media-icon" width="10" height="20">
+                  <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__media-item">
+              <a href="#" class="nav__media-link">
+                <svg class="nav__media-icon" width="16" height="20">
+                  <use href="./icons/symbol-defs.svg#icon-x"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__media-item">
+              <a href="#" class="nav__media-link">
+                <svg class="nav__media-icon" width="14" height="19">
+                  <use href="./icons/symbol-defs.svg#icon-linkidin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <button type="button" class="header-btn">
+            <svg class="header__btn-icon" width="13" height="15">
+              <use href="./icons/symbol-defs.svg#icon-reservation"></use>
+            </svg>
+            Reservation
+          </button>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero" id="home">
@@ -729,5 +802,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

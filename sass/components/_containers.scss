@@ -3,7 +3,14 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.header__container {
+  display: flex;
+  padding: 38px 57px;
+  align-items: center;
+}
+.header__menu-container {
+  position: absolute;
+}
 .logo__icon-wrapper {
   display: flex;
   align-items: center;

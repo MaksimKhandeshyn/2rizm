@@ -1,7 +1,4 @@
-.header {
-  display: flex;
-  padding: 38px 57px;
-  align-items: center;
+@media screen and (min-width: 1200px) {
   
   .header__icon-call {
     margin-right: 12px;
@@ -23,9 +20,12 @@
     color: $text-color;
     display: flex;
     align-items: center;
-    margin-right: 470px;
+    margin-right: 464px;
   }
   .header__btn-icon {
     margin-right: 12px;
   }
-}
+
+}  
+
+
