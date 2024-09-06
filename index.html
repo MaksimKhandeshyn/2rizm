@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty</title>
     <link
-      rel="icon"
-      type="image/x-icon"
-      href="./images/logo-icon.png"
-      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
       integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" type="image/x-icon" href="./images/logo-icon.png" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
@@ -98,18 +96,36 @@
         </nav>
       </div>
 
-      <div class="header__menu-container">
-        <button
-          type="button"
-          class="header__menu js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="button__open-icon" width="20" height="20">
-            <use href="./icons/symbol-defs.svg#icon-menu"></use>
+      <a href="#" class="header__logo-link logo__icon-wrapper">
+        <svg class="header-icon" width="33" height="33">
+          <use href="./icons/symbol-defs.svg#icon-logo"></use>
+        </svg>
+        Beautyness
+      </a>
+
+      <button
+        type="button"
+        class="header__menu js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="button__open-icon" width="30" height="30">
+          <use href="./icons/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="header__menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="header__menu js-close-menu">
+          <svg class="button__open-icon" width="30" height="30">
+            <use href="./icons/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-
+        <a href="#" class="header__logo-link logo__icon-wrapper">
+          <svg class="header-icon" width="33" height="33">
+            <use href="./icons/symbol-defs.svg#icon-logo"></use>
+          </svg>
+          Beautyness
+        </a>
         <a href="tel:+221234567890" class="header-call">
           <svg class="header__icon-call" width="21" height="21">
             <use href="./icons/symbol-defs.svg#icon-call"></use>

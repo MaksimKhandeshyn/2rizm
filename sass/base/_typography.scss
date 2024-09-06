@@ -10,13 +10,31 @@ body {
   text-transform: uppercase;
   color: #5c8692;
 }
+.header-icon {
+  margin-right: 12px;
+}
+.header-call {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  height: 100%;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  margin-right: 464px;
+}
+.header__logo-link {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.25;
+  color: $text-color;
+}
 .price__first-list {
   margin-left: 68px;
 }
 
 .price__seond-list {
   margin-right: 68px;
-}
-.header-icon {
-  margin-right: 12px;
 }

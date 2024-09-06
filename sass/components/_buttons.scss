@@ -1,12 +1,13 @@
 .header__menu {
   border: none;
   background-color: transparent;
+  position: absolute;
+  right: 50px;
   &:hover {
     cursor: pointer;
   }
 
 }
-
 .header-btn {
   background: $button-color;
   width: 199px;
