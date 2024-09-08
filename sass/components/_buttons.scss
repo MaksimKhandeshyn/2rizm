@@ -1,28 +1,28 @@
 .header__menu {
   border: none;
   background-color: transparent;
-  position: absolute;
-  right: 50px;
   &:hover {
     cursor: pointer;
   }
 
 }
 .header-btn {
-  background: $button-color;
+  //Блочная модель
+  display: flex;
+  align-items: center;
   width: 199px;
   height: 50px;
-  border: none;
-  font-family: $font-family;
+  justify-content: center;
+  //Типоография
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-family: $font-family;
+  //Оформление
   color: $theme-white;
-  margin-left: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: $button-color;
+  border: none;
 
   transition-property: background-color, box-shadow;
   transition-duration: 300ms;
@@ -31,6 +31,11 @@
     cursor: pointer;
     background-color: $comment-bg;
     box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__btn-icon {
+    margin-right: 5px ;
   }
 }
 .hero__btn {

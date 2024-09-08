@@ -96,7 +96,7 @@
         </nav>
       </div>
 
-      <a href="#" class="header__logo-link logo__icon-wrapper">
+      <a href="#" class="header__logo-link logo__icon-wrapper header__desktop">
         <svg class="header-icon" width="33" height="33">
           <use href="./icons/symbol-defs.svg#icon-logo"></use>
         </svg>
@@ -115,17 +115,19 @@
       </button>
 
       <div class="header__menu-container js-menu-container" id="mobile-menu">
-        <button type="button" class="header__menu js-close-menu">
-          <svg class="button__open-icon" width="30" height="30">
-            <use href="./icons/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-        <a href="#" class="header__logo-link logo__icon-wrapper">
-          <svg class="header-icon" width="33" height="33">
-            <use href="./icons/symbol-defs.svg#icon-logo"></use>
-          </svg>
-          Beautyness
-        </a>
+        <div class="menu__container-wrapper">
+          <a href="#" class="header__logo-link logo__icon-wrapper">
+            <svg class="header-icon" width="33" height="33">
+              <use href="./icons/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            Beautyness
+          </a>
+          <button type="button" class="header__menu js-close-menu">
+            <svg class="button__open-icon" width="30" height="30">
+              <use href="./icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
         <a href="tel:+221234567890" class="header-call">
           <svg class="header__icon-call" width="21" height="21">
             <use href="./icons/symbol-defs.svg#icon-call"></use>
