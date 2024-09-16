@@ -41,7 +41,12 @@
     margin-bottom: 130px;
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .section__container {
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1500px) {
   .header__container {
     display: flex;
@@ -62,10 +67,7 @@
     align-items: center;
     margin-right: 46px;
   }
-  .section__container {
-    display: flex;
-    align-items: center;
-  }
+
   .content-wrapper {
     margin-right: 72px;
   }

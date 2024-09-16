@@ -1,21 +1,41 @@
 .hero {
+  background-color: $bg-color;
   padding-top: 50px;
   padding-bottom: 50px;
-  .subtitle {
+  .hero__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .hero__title {
+    margin-bottom: 24px;
+    font-size: 35px;
+    letter-spacing: -0.01em;
     text-align: center;
+    color: $text-color;
+  }
+  .hero__info {
+    margin-bottom: 34px;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 1.7;
+    color: $color-info;
+  }
+  .hero__img {
+    display: none;
   }
 }
-
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 131px;
     padding-bottom: 136px;
-    background: url("../images/border-hero.png") no-repeat  77%,
+    background: url("../images/border-hero.png") no-repeat 77%,
       url("../images/hero-bg_2.jpg") no-repeat right;
     .hero__subtitle {
-      display: flex;
-      align-items: center;
+      justify-content: start;
       margin-bottom: 7px;
       .hero__icon {
         margin-right: 9px;
@@ -23,20 +43,15 @@
     }
     .hero__title {
       font-size: 70px;
-      letter-spacing: -0.01em;
-      color: $text-color;
       width: 510px;
-      margin-bottom: 24px;
+      text-align: start;
     }
     .hero__info {
-      font-family: $font-family;
       font-size: 19px;
-      line-height: 1.7;
-      color: $color-info;
-      width: 508px;
-      margin-bottom: 34px;
+      text-align: start;
     }
     .hero__img {
+      display: block;
       box-shadow: 0 20px 60px 0 rgba(47, 68, 73, 0.46);
     }
   }

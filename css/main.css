@@ -100,11 +100,6 @@ body {
   box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
 }
 
-@media screen and (min-width: 480px) {
-  .header__btn-icon {
-    margin-right: 5px;
-  }
-}
 .hero__btn {
   font-family: "Manrope", sans-serif;
   font-weight: 800;
@@ -223,6 +218,11 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 480px) {
+  .header__btn-icon {
+    margin-right: 5px;
+  }
+}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -274,6 +274,12 @@ body {
   margin-bottom: 130px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__container {
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1500px) {
   .header__container {
     display: flex;
@@ -292,10 +298,6 @@ body {
     display: flex;
     align-items: center;
     margin-right: 46px;
-  }
-  .section__container {
-    display: flex;
-    align-items: center;
   }
   .content-wrapper {
     margin-right: 72px;
@@ -363,6 +365,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .header .header__menu {
   display: inline;
@@ -509,11 +512,33 @@ body {
   }
 }
 .hero {
+  background-color: #EBF3F5;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.hero .subtitle {
+.hero .hero__subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hero .hero__title {
+  margin-bottom: 24px;
+  font-size: 35px;
+  letter-spacing: -0.01em;
   text-align: center;
+  color: #141414;
+}
+.hero .hero__info {
+  margin-bottom: 34px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #555;
+}
+.hero .hero__img {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -523,8 +548,7 @@ body {
     background: url("../images/border-hero.png") no-repeat 77%, url("../images/hero-bg_2.jpg") no-repeat right;
   }
   .hero .hero__subtitle {
-    display: flex;
-    align-items: center;
+    justify-content: start;
     margin-bottom: 7px;
   }
   .hero .hero__subtitle .hero__icon {
@@ -532,20 +556,15 @@ body {
   }
   .hero .hero__title {
     font-size: 70px;
-    letter-spacing: -0.01em;
-    color: #141414;
     width: 510px;
-    margin-bottom: 24px;
+    text-align: start;
   }
   .hero .hero__info {
-    font-family: "Manrope", sans-serif;
     font-size: 19px;
-    line-height: 1.7;
-    color: #555;
-    width: 508px;
-    margin-bottom: 34px;
+    text-align: start;
   }
   .hero .hero__img {
+    display: block;
     box-shadow: 0 20px 60px 0 rgba(47, 68, 73, 0.46);
   }
 }
