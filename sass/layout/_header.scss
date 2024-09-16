@@ -1,41 +1,45 @@
-@media screen and (min-width: 480px) {
-  .header {
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  .header__menu {
+    display: inline;
+  }
+  .header__logo-link {
+    display: block;
+    height: auto;
+  }
+  .logo__icon-wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    .header__menu {
-      display: inline;
-    }
-    .header__logo-link {
-      display: block;
-      height: auto;
-    }
-    .logo__icon-wrapper {
-      display: flex;
-      align-items: center;
-    }
-    .header-call {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 23px;
-      margin-right: 0;
-      margin-bottom: 20px;
-      margin-top: 40px;
-      font-size: 24px;
-      font-weight: 600;
-      font-family: $font-family;
-      color: $text-color;
+    align-items: center;
+  }
+  .header-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23px;
+    margin-right: 0;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font-family;
+    color: $text-color;
 
-      .header__icon-call {
-        margin-right: 10px;
-      }
+    .header__icon-call {
+      margin-right: 10px;
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
+    justify-content: center;
+  } 
+}
+@media screen and (min-width: 1500px) {
+  .header {
+    display: block;
     padding-top: 0;
     .header__menu {
       display: none;
@@ -46,7 +50,7 @@
     }
     .header-call {
       font-size: 18px;
-      margin-right: 396px;
+      width: 270px;
       margin-bottom: 0;
       margin-top: 0;
       .header__icon-call {
