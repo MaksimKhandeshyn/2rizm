@@ -4,7 +4,6 @@
   &:hover {
     cursor: pointer;
   }
-
 }
 .header-btn {
   //Блочная модель
@@ -20,52 +19,32 @@
   text-transform: uppercase;
   font-family: $font-family;
   //Оформление
-  color: $theme-white;
-  background: $button-color;
-  border: none;
-
-  transition-property: background-color, box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  &:hover {
-    cursor: pointer;
-    background-color: $comment-bg;
-    box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
-  }
+  @extend %btn-hover;
 }
 
 .hero__btn {
-  font-family: $font-family;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
-  background: $subtitle-color;
-  border: none;
+  @extend %btn-typography;
+  color: $theme-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   width: 250px;
   height: 65px;
-
-  transition-property: background-color, box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  &:hover {
-    cursor: pointer;
-    background-color: $comment-bg;
-    box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+  background: $subtitle-color;
+  border: none;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
   }
+  @extend %btn-hover;
 }
 .services__item-btn {
-  font-family: $font-family;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  @extend %btn-typography;
+  width: 180px;
+  height: 55px;
   color: $text-color;
   background-color: transparent;
   border: 2px solid $button-color;
-  width: 180px;
-  height: 55px;
   margin-top: 30px;
 
   transition-property: color, background-color, box-shadow;
@@ -82,11 +61,7 @@
   margin-left: 68px;
 }
 .price__btn {
-  font-family: $font-family;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  @extend %btn-typography;
   color: $text-color;
   border: 2px solid $button-color;
   width: 249px;
@@ -105,35 +80,18 @@
 }
 
 .form__btn {
-  font-family: $font-family;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 1.25;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: $theme-white;
+  @extend %btn-hover;
+  @extend %btn-typography;
   width: 399px;
   height: 64px;
   background: $button-color;
   border: none;
-
-  transition-property: background-color, box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  &:hover {
-    cursor: pointer;
-    background-color: $comment-bg;
-    box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
-  }
+  color: $theme-white;
 }
 
 .blog__btn {
-  font-family: $font-family;
-  font-weight: 800;
-  font-size: 14px;
+  @extend %btn-typography;
   line-height: 1.25;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   color: $text-color;
   border: 2px solid $button-color;
   width: 250px;
@@ -153,8 +111,9 @@
     border: none;
   }
 }
+
 @media screen and (min-width: 480px) {
   .header__btn-icon {
-    margin-right: 5px ;
+    margin-right: 5px;
   }
 }

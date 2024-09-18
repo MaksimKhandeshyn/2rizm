@@ -1,3 +1,25 @@
+.form__btn, .hero__btn, .header-btn {
+  color: #fff;
+  background: #5c8692;
+  border: none;
+  transition-property: background-color, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.form__btn:hover, .hero__btn:hover, .header-btn:hover {
+  cursor: pointer;
+  background-color: #1e2c30;
+  box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+}
+
+.blog__btn, .form__btn, .price__btn, .services__item-btn, .hero__btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -87,51 +109,31 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: "Manrope", sans-serif;
-  color: #fff;
-  background: #5c8692;
-  border: none;
-  transition-property: background-color, box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.header-btn:hover {
-  cursor: pointer;
-  background-color: #1e2c30;
-  box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
 }
 
 .hero__btn {
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   color: #fff;
-  background: #5c8692;
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   width: 250px;
   height: 65px;
-  transition-property: background-color, box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: #5c8692;
+  border: none;
 }
-.hero__btn:hover {
-  cursor: pointer;
-  background-color: #1e2c30;
-  box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    margin: 0;
+  }
 }
 
 .services__item-btn {
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  width: 180px;
+  height: 55px;
   color: #141414;
   background-color: transparent;
   border: 2px solid #5c8692;
-  width: 180px;
-  height: 55px;
   margin-top: 30px;
   transition-property: color, background-color, box-shadow;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -149,11 +151,6 @@ body {
 }
 
 .price__btn {
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   color: #141414;
   border: 2px solid #5c8692;
   width: 249px;
@@ -171,34 +168,15 @@ body {
 }
 
 .form__btn {
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 1.25;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
   width: 399px;
   height: 64px;
   background: #5c8692;
   border: none;
-  transition-property: background-color, box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.form__btn:hover {
-  cursor: pointer;
-  background-color: #1e2c30;
-  box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
+  color: #fff;
 }
 
 .blog__btn {
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  font-size: 14px;
   line-height: 1.25;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   color: #141414;
   border: 2px solid #5c8692;
   width: 250px;
@@ -279,6 +257,13 @@ body {
     display: flex;
     align-items: center;
   }
+  .comment__item-container {
+    background: #1e2c30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 135px;
+  }
 }
 @media screen and (min-width: 1500px) {
   .header__container {
@@ -309,13 +294,6 @@ body {
   }
   .price__container .content-wrapper {
     margin-right: 0;
-  }
-  .comment__item-container {
-    background: #1e2c30;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 135px;
   }
   .discount__wrapper {
     display: flex;
@@ -545,7 +523,7 @@ body {
   .hero {
     padding-top: 131px;
     padding-bottom: 136px;
-    background: url("../images/border-hero.png") no-repeat 77%, url("../images/hero-bg_2.jpg") no-repeat right;
+    background: url("../images/hero-bg_2.jpg") no-repeat right 25%;
   }
   .hero .hero__subtitle {
     justify-content: start;

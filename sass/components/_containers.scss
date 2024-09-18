@@ -46,6 +46,13 @@
     display: flex;
     align-items: center;
   }
+  .comment__item-container {
+    background: $comment-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 135px;
+  }
 }
 @media screen and (min-width: 1500px) {
   .header__container {
@@ -80,13 +87,6 @@
     }
   }
 
-  .comment__item-container {
-    background: $comment-bg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 135px;
-  }
   .discount__wrapper {
     display: flex;
     align-items: center;
