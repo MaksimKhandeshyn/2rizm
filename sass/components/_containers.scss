@@ -47,6 +47,14 @@
     align-items: center;
     justify-content: space-between;
   }
+  .price__container {
+    display: flex;
+    align-items: center;
+    height: 640px;
+    .content-wrapper {
+      margin-right: 0;
+    }
+  }
   .comment__item-container {
     background: $comment-bg;
     display: flex;
@@ -78,14 +86,6 @@
 
   .content-wrapper {
     margin-right: 72px;
-  }
-  .price__container {
-    display: flex;
-    align-items: center;
-    height: 640px;
-    .content-wrapper {
-      margin-right: 0;
-    }
   }
 
   .discount__wrapper {

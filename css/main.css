@@ -69,6 +69,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #5c8692;
+  text-align: center;
 }
 
 .header-icon {
@@ -149,10 +150,6 @@ body {
   box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
 }
 
-.price__first-btn {
-  margin-left: 68px;
-}
-
 .price__btn {
   color: #141414;
   border: 2px solid #5c8692;
@@ -208,6 +205,9 @@ body {
   .services__item-btn {
     display: block;
     margin: 0;
+  }
+  .price__first-btn {
+    margin-left: 68px;
   }
 }
 .container {
@@ -267,6 +267,14 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  .price__container {
+    display: flex;
+    align-items: center;
+    height: 640px;
+  }
+  .price__container .content-wrapper {
+    margin-right: 0;
+  }
   .comment__item-container {
     background: #1e2c30;
     display: flex;
@@ -296,14 +304,6 @@ body {
   }
   .content-wrapper {
     margin-right: 72px;
-  }
-  .price__container {
-    display: flex;
-    align-items: center;
-    height: 640px;
-  }
-  .price__container .content-wrapper {
-    margin-right: 0;
   }
   .discount__wrapper {
     display: flex;
@@ -628,38 +628,39 @@ body {
   }
 }
 .about {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #ebf3f5;
 }
 .about .about__title {
-  font-size: 45px;
+  font-size: 25px;
   line-height: 1.3;
   letter-spacing: -0.01em;
-  width: 435px;
   color: #141414;
   margin-top: 9px;
   margin-bottom: 16px;
+  text-align: center;
 }
 .about .about__info {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   line-height: 1.65;
-  width: 529px;
+  width: 300px;
   color: #555;
 }
 .about .about__list {
   display: flex;
   align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 37px;
 }
 .about .about__list .about__list-item {
-  border: 1px solid #1e2c30;
-  padding: 21px 11px;
   width: 165px;
   height: 180px;
+  margin-bottom: 30px;
+  padding: 21px 11px;
+  border: 1px solid #1e2c30;
   background-color: #fff;
 }
 .about .about__list .about__list-item .about__item-icon {
@@ -674,57 +675,123 @@ body {
   margin-top: 14px;
 }
 .about .about__img {
-  margin-left: 125px;
+  display: none;
 }
 
+@media screen and (min-width: 480px) {
+  .about .about__title {
+    font-size: 30px;
+  }
+  .about .about__info {
+    width: auto;
+  }
+  .about .about__list {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .about .about__title {
+    font-size: 28px;
+  }
+  .about .about__info {
+    width: auto;
+    text-align: center;
+  }
+  .about .about__list {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .about .about__title {
+    width: 435px;
+    text-align: start;
+    font-size: 45px;
+  }
+  .about .about__info {
+    width: 529px;
+    text-align: start;
+    font-size: 18px;
+  }
+  .about .about__list {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    margin-top: 37px;
+  }
+  .about .about__list .about__list-item {
+    margin-bottom: 0;
+  }
+  .about .about__list .about__list-item .about__item-icon {
+    display: block;
+    margin: auto;
+  }
+  .about .about__img {
+    display: block;
+    margin-left: 125px;
+  }
+}
 .price {
   padding-top: 146px;
   padding-bottom: 145px;
 }
-.price .price__subtitle {
-  text-align: center;
-}
 .price .price__title {
-  font-size: 45px;
+  font-size: 24px;
   line-height: 1.3;
   letter-spacing: -0.01em;
   text-align: center;
-  width: 659px;
-  margin: auto;
   color: #141414;
   margin-top: 9px;
   margin-bottom: 50px;
 }
+.price .first__price-container {
+  margin-bottom: 40px;
+}
+.price .price__first-list {
+  margin-left: 0;
+}
 .price .price__img {
-  width: 600px;
-  height: 640px;
+  display: none;
 }
 .price .price__list-item {
-  border-bottom: 1px solid #9bb7bf;
   margin-bottom: 33px;
+  border-bottom: 1px solid #9bb7bf;
 }
-.price .price__item-title {
+.price .price__list-item .price__item-title {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin-bottom: 5px;
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.3;
   color: #141414;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
 }
-.price .from {
+.price .price__list-item .price__item-title .price__title-part {
+  display: none;
+}
+.price .price__list-item .from {
+  margin-right: 5px;
+  margin-left: 5px;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.65;
   letter-spacing: 0.02em;
   color: #555;
-  margin-right: 5px;
-  margin-left: 5px;
 }
-.price .price__item-info {
-  width: 530px;
+.price .price__list-item .price__item-info {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   line-height: 1.65;
@@ -733,6 +800,63 @@ body {
   margin-bottom: 22px;
 }
 
+@media screen and (min-width: 1200px) {
+  .price {
+    padding-top: 146px;
+    padding-bottom: 145px;
+  }
+  .price .price__subtitle {
+    text-align: center;
+  }
+  .price .price__title {
+    font-size: 45px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    text-align: center;
+    width: 659px;
+    margin: auto;
+    color: #141414;
+    margin-top: 9px;
+    margin-bottom: 50px;
+  }
+  .price .price__img {
+    width: 600px;
+    height: 640px;
+  }
+  .price .price__list-item {
+    border-bottom: 1px solid #9bb7bf;
+    margin-bottom: 33px;
+  }
+  .price .price__item-title {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.3;
+    color: #141414;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .price .from {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    color: #555;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .price .price__item-info {
+    width: 530px;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    color: #555;
+    margin-bottom: 22px;
+  }
+}
 .comment {
   padding-top: 147px;
   padding-bottom: 147px;

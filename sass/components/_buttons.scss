@@ -60,9 +60,7 @@
     box-shadow: 3px 3px 3px 3px rgba(30, 44, 48, 0.5);
   }
 }
-.price__first-btn {
-  margin-left: 68px;
-}
+
 .price__btn {
   @extend %btn-typography;
   color: $text-color;
@@ -124,5 +122,8 @@
   .services__item-btn {
     display: block;
     margin: 0;
+  }
+  .price__first-btn {
+    margin-left: 68px;
   }
 }
