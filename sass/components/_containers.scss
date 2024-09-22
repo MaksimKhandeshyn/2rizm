@@ -41,6 +41,18 @@
     margin-bottom: 130px;
   }
 }
+.comment__item-container {
+  background: $comment-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 135px;
+}
+@media screen and (min-width: 768px) {
+  .comment__item-container {
+    justify-content: space-evenly;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section__container {
     display: flex;
@@ -54,13 +66,6 @@
     .content-wrapper {
       margin-right: 0;
     }
-  }
-  .comment__item-container {
-    background: $comment-bg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 135px;
   }
 }
 @media screen and (min-width: 1500px) {
