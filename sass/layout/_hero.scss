@@ -1,7 +1,7 @@
 .hero {
-  background-color: $bg-color;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: $bg-color;
   .hero__subtitle {
     display: flex;
     justify-content: center;
@@ -17,10 +17,10 @@
   }
   .hero__info {
     margin-bottom: 34px;
-    text-align: center;
     font-family: $font-family;
     font-size: 20px;
     line-height: 1.7;
+    text-align: center;
     color: $color-info;
   }
   .hero__img {
