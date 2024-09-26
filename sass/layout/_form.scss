@@ -1,0 +1,38 @@
+.form {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    display: block;
+    width: 550px;
+    height: 667px;
+    box-shadow: 0 20px 40px 0 rgba(42, 68, 75, 0.13);
+    background: $theme-white;
+    padding: 66px 75px;
+    margin-left: 115px;
+    .form__list-item {
+      position: relative;
+      margin-bottom: 15px;
+    }
+    .form__item-input {
+      border: 1px solid $button-color;
+      width: 400px;
+      height: 65px;
+      padding-left: 54px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .form__item-textarea {
+      resize: none;
+      padding-top: 21px;
+      width: 399px;
+      height: 136px;
+    }
+    .form__item-icon {
+      position: absolute;
+      top: 21px;
+      left: 15px;
+    }
+  }
+}
