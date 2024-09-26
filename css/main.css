@@ -1389,4 +1389,8 @@ body {
   .hero {
     background: url("../images/hero-bg_2.jpg") no-repeat right 25%;
   }
+}
+.hero__about {
+  background-image: url("../images/about-bg.png");
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */
