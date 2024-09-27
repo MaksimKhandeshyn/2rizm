@@ -1,4 +1,191 @@
 .hero__about {
-    background-image: url("../images/about-bg.png");
-    background-repeat: no-repeat;
+  padding-top: 117px;
+  padding-bottom: 118px;
+  background-image: url("../images/about-bg.png");
+  background-repeat: no-repeat;
+  .hero__about-subtitle {
+    margin-bottom: 10px;
+    color: $theme-white;
+  }
+  .hero__title {
+    width: 649px;
+    margin: auto;
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $theme-white;
+  }
+}
+
+.values {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  .values__title {
+    margin-bottom: 45px;
+    font-size: 45px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $text-color;
+  }
+  .values__list {
+    width: 660px;
+    margin: auto;
+    .values__item {
+      display: flex;
+      flex-wrap: wrap;
+      .values__item-title {
+        font-size: 22px;
+        line-height: 1.2;
+        color: $text-color;
+        margin-bottom: 8px;
+      }
+      .values__item-info {
+        width: 458px;
+        font-family: $font-family;
+        font-size: 18px;
+        line-height: 1.75;
+        color: $color-info;
+      }
+      &::after {
+        content: "";
+        display: block;
+        border: 1px solid #d3d3d3;
+        width: 620px;
+        height: 0px;
+        margin: 36px 0;
+      }
+    }
+  }
+}
+
+.about {
+  padding-top: 137px;
+  padding-bottom: 137px;
+  .about__container-wrapper {
+    position: relative;
+    width: 1200px;
+    padding: 74px 73px;
+    background-color: $comment-bg;
+    .about__subtitle,
+    .about__title,
+    .about__info {
+      margin-left: 619px;
+    }
+    .about__subtitle {
+      text-align: start;
+      color: $theme-white;
+    }
+    .about__title {
+      width: 460px;
+      font-family: $second-family;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: $theme-white;
+    }
+    .about__info {
+      width: 508px;
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.75;
+      color: $theme-white;
+    }
+    .about__img {
+      position: absolute;
+      right: 650px;
+      top: -55px;
+    }
+  }
+}
+
+.experts {
+  padding-top: 129px;
+  padding-bottom: 129px;
+  .experts__title {
+    width: 659px;
+    margin: auto;
+    font-size: 45px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $text-color;
+  }
+  .experts__list {
+    display: flex;
+    margin-top: 33px;
+    .experts__item:not(:last-child) {
+      margin-right: 45px;
+    }
+    .experts__item-title {
+      font-size: 24px;
+      line-height: 1.2;
+      text-align: center;
+      color: $text-color;
+    }
+    .experts__position {
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.545;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      color: $subtitle-color;
+    }
+    .experts__quote {
+      width: 336px;
+      margin-top: 8px;
+      font-family: $font-family;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+      color: $color-info;
+    }
+    .experts__list-item {
+      display: flex;
+      justify-content: center;
+      margin-right: 30px;
+      margin-top: 8px;
+    }
+  }
+}
+
+.share {
+  .share__container {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .share__subtitle {
+      text-align: start;
+    }
+    .share__title {
+      width: 264px;
+      font-size: 45px;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: $text-color;
+    }
+    .share__description {
+      width: 495px;
+      margin-top: 22px;
+      margin-bottom: 53px;
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.75;
+      color: $color-info;
+    }
+    .image__container {
+      margin-left: 52px;
+      .share__img {
+        margin-bottom: 46px;
+      }
+    }
+  }
 }

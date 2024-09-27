@@ -135,3 +135,31 @@
     margin: 0;
   }
 }
+
+// About us
+.hero__about-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.share__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 249px;
+  height: 65px;
+  margin: auto;
+  margin-bottom: 150px;
+  font-family: $font-family;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $theme-white;
+  border: none;
+  background: $button-color;
+}

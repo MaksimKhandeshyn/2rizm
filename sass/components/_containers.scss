@@ -149,3 +149,15 @@
     }
   }
 }
+
+// About us
+.values__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-right: 32px;
+  border: 1px solid #000;
+  background-color: #f2fcff;;
+}
