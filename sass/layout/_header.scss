@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  padding-bottom: 30px;
   .header__menu {
     display: inline;
   }
@@ -41,6 +42,7 @@
   .header {
     display: block;
     padding-top: 0;
+    padding-bottom: 0;  
     .header__menu {
       display: none;
     }

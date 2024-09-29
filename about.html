@@ -201,7 +201,83 @@
           <h1 class="hero__title">
             The big story behind, our beautyness center
           </h1>
-          <button type="button" class="hero__btn hero__about-btn">Make a reservation</button>
+          <button
+            type="button"
+            class="hero__btn hero__about-btn"
+            data-modal-open
+          >
+            Make a reservation
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal" data-modal>
+            <form class="form">
+              <ul class="form__list">
+                <li class="form__list-item">
+                  <svg class="form__item-icon" width="24" height="24">
+                    <use href="./icons/symbol-defs.svg#icon-user"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    class="form__item-input"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                  />
+                </li>
+                <li class="form__list-item">
+                  <svg class="form__item-icon" width="24" height="24">
+                    <use href="./icons/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    class="form__item-input"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </li>
+                <li class="form__list-item">
+                  <svg class="form__item-icon" width="24" height="24">
+                    <use href="./icons/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    class="form__item-input"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone"
+                  />
+                </li>
+                <li class="form__list-item">
+                  <svg class="form__item-icon" width="24" height="24">
+                    <use href="./icons/symbol-defs.svg#icon-service"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    class="form__item-input"
+                    name="service"
+                    id="service"
+                    placeholder="Service you need "
+                  />
+                </li>
+                <li class="form__list-item">
+                  <svg class="form__item-icon" width="24" height="24">
+                    <use href="./icons/symbol-defs.svg#icon-edit"></use>
+                  </svg>
+                  <textarea
+                    name="notes"
+                    id="notes"
+                    placeholder="Any notes for us"
+                    class="form__item-input form__item-textarea"
+                  ></textarea>
+                </li>
+              </ul>
+              <button type="button" class="form__btn" data-modal-close>
+                Get an appointment
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -272,7 +348,11 @@
               injected humour, or randomised words which don't look even many
               desktop publishing packages.
             </p>
-            <img src="./images/about__bg-mobile.png" alt="" class="about__img"/>
+            <img
+              src="./images/about__bg-mobile.png"
+              alt=""
+              class="about__img"
+            />
           </div>
         </div>
       </section>
@@ -454,8 +534,8 @@
             <img src="./images/meditation.png" alt="" />
           </div>
           <div class="image__container">
-            <img src="./images/masage.png" alt="" class="share__img"/>
-            <img src="./images/stone.png" alt=""/>
+            <img src="./images/masage.png" alt="" class="share__img" />
+            <img src="./images/stone.png" alt="" />
           </div>
         </div>
         <button type="button" class="share__btn">Contact Us</button>
@@ -560,6 +640,7 @@
         </a>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
