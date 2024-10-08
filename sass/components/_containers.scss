@@ -157,7 +157,13 @@
   align-items: center;
   width: 100px;
   height: 100px;
-  margin-right: 32px;
+  margin: auto;
   border: 1px solid #000;
   background-color: #f2fcff;;
 }
+@media screen and (min-width: 1200px) {
+  .values__icon-wrapper {
+    margin-right: 32px;
+  } 
+}
+
